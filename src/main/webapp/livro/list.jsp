@@ -16,7 +16,14 @@
             <tr>
                 <th>ID</th>
                 <th>Título</th>
-                </tr>
+
+            </tr>
+                <td>${l.autor.nome}</td>
+                <td>${l.editora.nome}</td>
+                <td>
+                <a href="/livro/update/${l.id}" class="btn btn-primary">editar o livro</a>
+                <a href="/livro/delete/${l.id}" class="btn btn-primary">deletar o livro</a>
+                
                 <c:forEach var="l" items="${livros}">
                     <tr>
                         <td>${l.id}</td>
